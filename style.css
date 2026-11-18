@@ -1,0 +1,114 @@
+</> css
+/* STYLE GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 50px 20px;
+  color: #333;
+}
+
+/* GRANDE CARTE */
+.carte {
+  background: white;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 45px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* PHOTO */
+.photo-profil {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #764ba2;
+  margin: 0 auto 25px;
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.3);
+}
+
+/* TITRE PRINCIPAL */
+h1 {
+  text-align: center;
+  color: #764ba2;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+/* SOUS-TITRES */
+h2 {
+  color: #667eea;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-left: 5px solid #764ba2;
+  padding-left: 12px;
+}
+
+/* PARAGRAPHES */
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* LISTE DES COMPETENCES */
+ul {
+  padding-left: 25px;
+}
+
+li {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* LIENS */
+a {
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #e056a0;
+  text-decoration: underline;
+}
+
+/* EFFET AU SURVOL DE LA CARTE */
+.carte {
+  transition: transform 0.3s ease;
+}
+
+/* TELEPHONE ET PETIT ECRAN */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .carte {
+    padding: 25px 18px;
+  }
+
+  .photo-profil {
+    width: 140px;
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+}
